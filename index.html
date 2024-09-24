@@ -172,9 +172,11 @@
               <h2
                 class="caption2-slide1 tit1 t-center animated visible-false m-b-37"
                 data-appear="fadeInUp"
+                style="max-width: 100%; font-size: 100%;"
               >
                 ¬'nome restaurante'
               </h2>
+              
 
               <div
                 class="wrap-btn-slide1 animated visible-false"
@@ -257,11 +259,30 @@
     <div class="row">
       <!-- Google Maps on the Left -->
       <div class="col-md-6 p-b-30">
-        <div class="google-map">
+        <style>
+          
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; /* Aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important; /* Full width */
+        height: 100% !important; /* Full height */
+    }
+
+    /* Increase the size of the map */
+    .google-maps {
+        padding-bottom: 60%; /* Adjust aspect ratio for a larger map */
+    }
+</style>
+        <div class="google-maps">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.62817538582095!2d-47.393549558797986!3d-22.17805360311401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80bbf56324763%3A0x9b6c87bb27a20abd!2sRestaurante%20Madalena!5e0!3m2!1sen!2sbr!4v1720723679485!5m2!1sen!2sbr"
-            width="600"
-            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
